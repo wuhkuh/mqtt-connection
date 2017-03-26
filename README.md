@@ -321,12 +321,14 @@ Emitted when an MQTT `[pingreq, pingresp, disconnect]` packet is received.
 -------------------------------------
 
 <a name="generateStream">
+
 ### mqtt.generateStream()
 
 Returns a `Transform` stream that calls [`generate()`](https://github.com/mqttjs/mqtt-packet#generate).
 The stream is configured into object mode.
 
 <a name="parseStream">
+
 ### mqtt.parseStream(opts)
 
 Returns a `Transform` stream that embeds a [`Parser`](https://github.com/mqttjs/mqtt-packet#mqttparser) and calls [`Parser.parse()`](https://github.com/mqttjs/mqtt-packet#parserparsebuffer) for each new `Buffer`. The stream is configured into object mode. It accepts the same options of [`parser(opts)`](#parser).
